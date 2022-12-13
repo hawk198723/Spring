@@ -13,6 +13,7 @@
         <module>spring_02_HelloWorld</module>
         <module>spring_03_ICO2</module>
         <module>spring_04_DI</module>
+        <module>spring_05_Autowired</module>
     </modules>
 
     <properties>
