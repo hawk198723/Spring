@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    use spring create object which is bean-->
+    <bean id="DaoImpl" class="com.self.dao.UserDaoImpl"/>
+    <bean id="MysqlImpl" class="com.self.dao.UserDaoMysqlImpl"/>
+    <bean id="OracleImpl" class="com.self.dao.UserDaoOracleImpl"/>
+    <bean id="SqlserverImpl" class="com.self.dao.UserDaoSqlserverImpl"/>
+
+    <bean id="UserServiceImpl" class="com.self.service.UserServiceImpl">
+        <property name="userDao" ref="OracleImpl"/>
+    </bean>
+
+
+</beans>
