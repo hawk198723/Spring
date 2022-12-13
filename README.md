@@ -16,9 +16,9 @@
 </dependencies>
 ```
 ## Annotation-based Container Configuration
-
+````
 -@Autowired: byType first , then byName
-    if Autowired cannot work, then we need @Qualifier(value="xxxx")
+   if Autowired cannot work, then we need @Qualifier(value="xxxx")
 -@Resorce: byName first, then byType
 -@Nullable: means this prop could be null
-
+````
