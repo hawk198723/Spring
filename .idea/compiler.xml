@@ -10,6 +10,7 @@
         <module name="spring_01_IOC1" />
         <module name="spring_03_ICO2" />
         <module name="spring_02_HelloWorld" />
+        <module name="spring_05_Autowired" />
       </profile>
     </annotationProcessing>
   </component>
