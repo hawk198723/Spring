@@ -12,6 +12,7 @@
         <module>spring_01_IOC1</module>
         <module>spring_02_HelloWorld</module>
         <module>spring_03_ICO2</module>
+        <module>spring_04_DI</module>
     </modules>
 
     <properties>

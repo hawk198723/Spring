@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="address" class="com.jason.pojo.Address">
+        <property name="address" value="San Diego"/>
+    </bean>
+
+    <bean id="student" class="com.jason.pojo.Student">
+        <property name="name" value="jason"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>Spider Comic</value>
+                <value>Batman Comic</value>
+                <value>Superman Comic</value>
+            </array>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>Running</value>
+                <value>Basketball</value>
+                <value>Hiking</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="ID" value="33535808"/>
+                <entry key="Gender" value="Male"/>
+            </map>
+        </property>
+        <property name="games">
+            <set>
+                <value>Mario</value>
+                <value>Kirby</value>
+                <value>Pacman</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null/>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="ID">984759485</prop>
+                <prop key="gender">frmale</prop>
+                <prop key="name">root</prop>
+                <prop key="password">password</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+</beans>
