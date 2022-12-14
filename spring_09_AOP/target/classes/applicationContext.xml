@@ -16,15 +16,15 @@
 <!--        <aop:advisor advice-ref="afterLog"pointcut-ref="pointcut"/>-->
 <!--    </aop:config>-->
 
-    <bean id="diy" class="com.jason.DIY.DiyPointCut"/>
-    <aop:config>
-        <aop:aspect ref="diy" >
-            <aop:pointcut id="point" expression="execution(* com.jason.service.UserServiceImpl.*(..))"/>
-            <aop:before method="before" pointcut-ref="point"/>
-            <aop:after method="after" pointcut-ref="point"/>
-        </aop:aspect>
-    </aop:config>
-<!--    <bean id="annotationPointCut" class="com.jason.DIY.AnnotationPointCut"/>-->
-<!--      <aop:aspectj-autoproxy/>-->
+<!--    <bean id="diy" class="com.jason.DIY.DiyPointCut"/>-->
+<!--    <aop:config>-->
+<!--        <aop:aspect ref="diy" >-->
+<!--            <aop:pointcut id="point" expression="execution(* com.jason.service.UserServiceImpl.*(..))"/>-->
+<!--            <aop:before method="before" pointcut-ref="point"/>-->
+<!--            <aop:after method="after" pointcut-ref="point"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+    <bean id="annotationPointCut" class="com.jason.DIY.AnnotationPointCut"/>
+      <aop:aspectj-autoproxy/>
 
 </beans>
