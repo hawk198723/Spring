@@ -14,6 +14,10 @@
         <module>spring_03_ICO2</module>
         <module>spring_04_DI</module>
         <module>spring_05_Autowired</module>
+        <module>spring_06_Annotation</module>
+        <module>spring_07_AppConfiguration</module>
+        <module>spring_08_proxy</module>
+        <module>spring_09_AOP</module>
     </modules>
 
     <properties>

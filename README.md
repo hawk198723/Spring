@@ -70,10 +70,10 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
         </property>
     </bean>
 </beans>
-
 ```
 
 ## Basic Annotation Injection register application.xml 
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -93,7 +93,8 @@ https://www.springframework.org/schema/context/spring-context.xsd">
     <bean id="person" class="com.jason.pojo.Person" />
 
 
-</beans>```
+</beans>
+```
 
 
 ## Annotation-based Container Configuration
@@ -102,4 +103,5 @@ https://www.springframework.org/schema/context/spring-context.xsd">
    if Autowired cannot work(have two same types), then we need @Qualifier(value="xxxx")
 -@Resorce: byName first, then byType (it's a Java annotation)
 -@Nullable: means this prop could be null
+-@Component: this component is bean, be in charged by Spring
 ````
