@@ -96,6 +96,18 @@ https://www.springframework.org/schema/context/spring-context.xsd">
 </beans>
 ```
 
+##AOP dependency
+```` xml
+<dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+    </dependencies>
+````
+
+
 
 ## Annotation-based Container Configuration
 ````
@@ -104,4 +116,8 @@ https://www.springframework.org/schema/context/spring-context.xsd">
 -@Resorce: byName first, then byType (it's a Java annotation)
 -@Nullable: means this prop could be null
 -@Component: this component is bean, be in charged by Spring
+-@Aspect： AOP 
+-@Before: AOP
+-@After: AOP
+-@Around: AOP
 ````
